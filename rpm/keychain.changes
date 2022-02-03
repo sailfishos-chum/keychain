@@ -1,0 +1,8 @@
+* Thu Feb  3 2022 Nephros <sailfish@nephros.org> - 2.8.5+git1
+- rename to plain keychain, move to obs
+
+* Sun Dec 13 17:39:11 CET 2020  Nephros <sailfish@nephros.org> - 2.8.5-2
+- call the Makefile too
+
+* Sun Dec 13 13:39:11 CET 2020  Nephros <sailfish@nephros.org> - 2.8.5-1
+- first release for SailfishOS

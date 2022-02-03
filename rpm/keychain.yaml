@@ -1,0 +1,36 @@
+Name: keychain
+Summary: agent manager for OpenSSH, ssh.com, Sun SSH, and GnuPG
+Version: 2.8.5
+Release: 0
+Group: Applications/Internet
+License: GPL v2
+URL: http://www.funtoo.org
+SCM: https://github.com/funtoo/keychain
+Sources:
+    - '%{name}-%{version}.tar.gz'
+
+Description: |
+    Keychain is a manager for OpenSSH, ssh.com, Sun SSH and GnuPG agents.
+    It acts as a front-end to the agents, allowing you to easily have one
+    long-running agent process per system, rather than per login session.
+    This reduces the number of times you need to enter your passphrase
+    from once per new login session to once every time your local machine
+    is rebooted.
+
+    %if "%{?vendor}" == "chum"
+    Type: console-application
+    PackagerName: nephros
+    Categories:
+     - Utility
+    Custom:
+      PackagingRepo: https://gitlab.com/nephros/openrepos-keychain
+    %endif
+
+SetupOptions: -q -n %{name}-%{version}/upstream
+PkgBR:
+  - 'perl'
+Configure: none
+Builder: none
+BuildArch: noarch
+Files:
+ - '%{_bindir}/*'
