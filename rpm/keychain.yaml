@@ -35,11 +35,11 @@ Description: |
 SetupOptions: -q -n %{name}-%{version}/upstream
 # previously published on Openrepos:
 Provides:
-  - 'openrepos-keychain'
+  - 'openrepos-keychain = %{version}'
 Conflicts:
   - 'openrepos-keychain <= %{version}'
 Obsoletes:
-  - 'openrepos-keychain <= %{version}'
+  - 'openrepos-keychain < %{version}'
 #Requires:
 #PkgConfigBR:
 PkgBR:
