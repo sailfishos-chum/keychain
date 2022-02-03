@@ -27,6 +27,14 @@ Description: |
     %endif
 
 SetupOptions: -q -n %{name}-%{version}/upstream
+Provides:
+  - 'openrepos-keychain'
+Conflicts:
+  - 'openrepos-keychain <= %{version}'
+Obsoletes:
+  - 'openrepos-keychain <= %{version}'
+#Requires:
+#PkgConfigBR:
 PkgBR:
   - 'perl'
 Configure: none

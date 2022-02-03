@@ -18,6 +18,9 @@ URL:        http://www.funtoo.org
 Source0:    %{name}-%{version}.tar.gz
 Source100:  keychain.yaml
 BuildRequires:  perl
+Provides:   openrepos-keychain
+Conflicts:   openrepos-keychain <= %{version}
+Obsoletes:   openrepos-keychain <= %{version}
 
 %description
 Keychain is a manager for OpenSSH, ssh.com, Sun SSH and GnuPG agents.
