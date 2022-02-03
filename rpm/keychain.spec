@@ -12,7 +12,7 @@ Summary:    agent manager for OpenSSH, ssh.com, Sun SSH, and GnuPG
 Version:    2.8.5
 Release:    0
 Group:      Applications/Internet
-License:    GPL v2
+License:    GPLv2
 BuildArch:  noarch
 URL:        http://www.funtoo.org
 Source0:    %{name}-%{version}.tar.gz
