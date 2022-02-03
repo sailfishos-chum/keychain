@@ -8,13 +8,13 @@ Name:       keychain
 # >> macros
 # << macros
 
-Summary:    agent manager for OpenSSH, ssh.com, Sun SSH, and GnuPG
+Summary:    Agent manager for OpenSSH, ssh.com, Sun SSH, and GnuPG
 Version:    2.8.5
 Release:    0
 Group:      Applications/Internet
 License:    GPLv2
 BuildArch:  noarch
-URL:        http://www.funtoo.org
+URL:        https://www.funtoo.org/Keychain
 Source0:    %{name}-%{version}.tar.gz
 Source100:  keychain.yaml
 BuildRequires:  perl
@@ -34,9 +34,15 @@ is rebooted.
 Type: console-application
 PackagerName: nephros
 Categories:
+ - Security
+ - ConsoleOnly
  - Utility
 Custom:
   PackagingRepo: https://gitlab.com/nephros/openrepos-keychain
+Url:
+  Homepage: https://www.funtoo.org/Keychain
+  Help: https://www.funtoo.org/Keychain
+  Bugtracker: https://github.com/funtoo/keychain/issues
 %endif
 
 
