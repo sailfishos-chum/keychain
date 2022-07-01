@@ -10,7 +10,7 @@ Name:       keychain
 
 Summary:    Agent manager for OpenSSH, ssh.com, Sun SSH, and GnuPG
 Version:    2.8.5
-Release:    0
+Release:    2
 Group:      Applications/Internet
 License:    GPLv2
 BuildArch:  noarch
@@ -38,7 +38,8 @@ Categories:
  - ConsoleOnly
  - Utility
 Custom:
-  PackagingRepo: https://gitlab.com/nephros/openrepos-keychain
+  Repo: https://github.com/funtoo/keychain
+  PackagingRepo: https://github.com/sailfishos-chum/keychain
 Url:
   Homepage: https://www.funtoo.org/Keychain
   Help: https://www.funtoo.org/Keychain

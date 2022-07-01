@@ -1,3 +1,6 @@
+* Fri Jul  1 2022 Nephros <sailfish@nephros.org> - 2.8.5+git2
+- move packaging repo to github:sailfishos-chum/keychain
+
 * Thu Feb  3 2022 Nephros <sailfish@nephros.org> - 2.8.5+git1
 - rename to plain keychain, move to obs
 
