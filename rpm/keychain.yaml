@@ -8,7 +8,13 @@ URL: https://www.funtoo.org/Keychain
 SCM: https://github.com/funtoo/keychain
 Sources:
     - '%{name}-%{version}.tar.gz'
-
+    - 'https://raw.githubusercontent.com/gentoo/gentoo/master/net-misc/keychain/files/keychain-2.8.5-empty-ssh-askpass.patch'
+    - 'https://raw.githubusercontent.com/gentoo/gentoo/master/net-misc/keychain/files/keychain-2.8.5-malformed-ssh-key.patch'
+    - 'https://raw.githubusercontent.com/gentoo/gentoo/master/net-misc/keychain/files/keychain-2.8.5-typos.patch'
+Patches:
+    - 'keychain-2.8.5-empty-ssh-askpass.patch'
+    - 'keychain-2.8.5-malformed-ssh-key.patch'
+    - 'keychain-2.8.5-typos.patch'
 Description: |
     Keychain is a manager for OpenSSH, ssh.com, Sun SSH and GnuPG agents.
     It acts as a front-end to the agents, allowing you to easily have one
