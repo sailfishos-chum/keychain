@@ -42,7 +42,7 @@ Categories:
  - ConsoleOnly
  - Utility
 Custom:
-  Repo: https://github.com/funtoo/keychain
+  Repo: https://github.com/danielrobbins/keychain
   PackagingRepo: https://github.com/sailfishos-chum/keychain
 Links:
   Homepage: https://www.funtoo.org/Keychain

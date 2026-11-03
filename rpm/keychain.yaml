@@ -4,7 +4,7 @@ Version: 2.9.8
 Release: 2
 License: GPLv2
 URL: https://www.funtoo.org/Keychain
-SCM: https://github.com/funtoo/keychain
+SCM: https://github.com/danielrobbins/keychain
 Sources:
     - '%{name}-%{version}.tar.gz'
     - 'https://raw.githubusercontent.com/gentoo/gentoo/master/net-misc/keychain/files/keychain-2.8.5-empty-ssh-askpass.patch'
@@ -29,7 +29,7 @@ Description: |
      - ConsoleOnly
      - Utility
     Custom:
-      Repo: https://github.com/funtoo/keychain
+      Repo: https://github.com/danielrobbins/keychain
       PackagingRepo: https://github.com/sailfishos-chum/keychain
     Links:
       Homepage: https://www.funtoo.org/Keychain
