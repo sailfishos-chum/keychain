@@ -1,8 +1,7 @@
 Name: keychain
 Summary: Agent manager for OpenSSH, ssh.com, Sun SSH, and GnuPG
-Version: 2.8.5
+Version: 2.9.8
 Release: 2
-Group: Applications/Internet
 License: GPLv2
 URL: https://www.funtoo.org/Keychain
 SCM: https://github.com/funtoo/keychain
