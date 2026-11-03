@@ -19,9 +19,8 @@ Source1:    https://raw.githubusercontent.com/gentoo/gentoo/master/net-misc/keyc
 Source2:    https://raw.githubusercontent.com/gentoo/gentoo/master/net-misc/keychain/files/keychain-2.8.5-malformed-ssh-key.patch
 Source3:    https://raw.githubusercontent.com/gentoo/gentoo/master/net-misc/keychain/files/keychain-2.8.5-typos.patch
 Source100:  keychain.yaml
-Patch0:     keychain-2.8.5-empty-ssh-askpass.patch
-Patch1:     keychain-2.8.5-malformed-ssh-key.patch
-Patch2:     keychain-2.8.5-typos.patch
+Patch0:     keychain-%{version}-empty-ssh-askpass.patch
+Patch1:     keychain-%{version}-typos.patch
 BuildRequires:  perl
 Provides:   openrepos-keychain = %{version}
 Conflicts:   openrepos-keychain <= %{version}
@@ -35,9 +34,9 @@ This reduces the number of times you need to enter your passphrase
 from once per new login session to once every time your local machine
 is rebooted.
 
-%if "%{?vendor}" == "chum"
+%if 0%{?_chum}
 Type: console-application
-PackagerName: nephros
+PackagedBy: nephros
 Categories:
  - Security
  - ConsoleOnly
@@ -45,7 +44,7 @@ Categories:
 Custom:
   Repo: https://github.com/funtoo/keychain
   PackagingRepo: https://github.com/sailfishos-chum/keychain
-Url:
+Links:
   Homepage: https://www.funtoo.org/Keychain
   Help: https://www.funtoo.org/Keychain
   Bugtracker: https://github.com/funtoo/keychain/issues
@@ -55,12 +54,10 @@ Url:
 %prep
 %setup -q -n %{name}-%{version}/upstream
 
-# keychain-2.8.5-empty-ssh-askpass.patch
+# keychain-%{version}-empty-ssh-askpass.patch
 %patch0 -p1
-# keychain-2.8.5-malformed-ssh-key.patch
+# keychain-%{version}-typos.patch
 %patch1 -p1
-# keychain-2.8.5-typos.patch
-%patch2 -p1
 # >> setup
 # << setup
 

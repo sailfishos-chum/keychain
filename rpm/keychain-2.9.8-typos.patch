@@ -1,0 +1,13 @@
+diff --git a/keychain.sh b/keychain.sh
+index 0e91859..752906c 100755
+--- a/keychain.sh
++++ b/keychain.sh
+@@ -191,7 +191,7 @@ lockfile() {
+ 	# This function originates from Parallels Inc.'s OpenVZ vpsreboot script.
+ 
+ 	# Description: This function attempts to acquire the lock. If it succeeds,
+-	# it returns 0. If it fails, it returns 1. This function retuns immediately
++	# it returns 0. If it fails, it returns 1. This function returns immediately
+ 	# and only tries to acquire the lock once.
+ 
+ 	tmpfile="$lockf.$$"

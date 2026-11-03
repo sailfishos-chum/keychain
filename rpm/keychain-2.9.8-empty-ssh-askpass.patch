@@ -1,0 +1,14 @@
+diff --git a/keychain.sh b/keychain.sh
+index 0e91859..7906d98 100755
+--- a/keychain.sh
++++ b/keychain.sh
+@@ -1076,6 +1076,9 @@ load_ssh_keys() {
+ 	IFS="$IFS_BAK"
+ 	[ $# -eq 0 ] && return
+ 	mesg "Adding ${CYANN}$#${OFF} ssh key(s): ${CYANN}$*${OFF}"
++	if [ -z "$SSH_ASKPASS" ]; then
++		SSH_ASKPASS="$(command -v ssh-askpass || true)"
++	fi
+ 	if $noguiopt || [ -z "$SSH_ASKPASS" ] || [ -z "$DISPLAY" ]; then
+ 		unset DISPLAY		# DISPLAY="" can cause problems
+ 		unset SSH_ASKPASS	# make sure ssh-add doesn't try SSH_ASKPASS
