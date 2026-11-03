@@ -3,7 +3,7 @@ Summary: SSH and GPG agent manager for secure key management
 Version: 2.9.8
 Release: 2
 License: GPLv2
-URL: https://github.com/danielrobbins/keychain
+URL: https://kernel-seeds.org/projects/keychain/
 SCM: https://github.com/danielrobbins/keychain
 Sources:
     - '%{name}-%{version}.tar.gz'
@@ -31,6 +31,8 @@ Description: |
     Custom:
       Repo: https://github.com/danielrobbins/keychain
       PackagingRepo: https://github.com/sailfishos-chum/keychain
+    Links:
+      Homepage: https://kernel-seeds.org/projects/keychain/
     %endif
 
 SetupOptions: -q -n %{name}-%{version}/upstream

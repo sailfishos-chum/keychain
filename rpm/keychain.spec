@@ -13,7 +13,7 @@ Version:    2.9.8
 Release:    2
 License:    GPLv2
 BuildArch:  noarch
-URL:        https://github.com/danielrobbins/keychain
+URL:        https://kernel-seeds.org/projects/keychain/
 Source0:    %{name}-%{version}.tar.gz
 Source1:    https://raw.githubusercontent.com/gentoo/gentoo/master/net-misc/keychain/files/keychain-2.8.5-empty-ssh-askpass.patch
 Source2:    https://raw.githubusercontent.com/gentoo/gentoo/master/net-misc/keychain/files/keychain-2.8.5-malformed-ssh-key.patch
@@ -44,6 +44,8 @@ Categories:
 Custom:
   Repo: https://github.com/danielrobbins/keychain
   PackagingRepo: https://github.com/sailfishos-chum/keychain
+Links:
+  Homepage: https://kernel-seeds.org/projects/keychain/
 %endif
 
 
