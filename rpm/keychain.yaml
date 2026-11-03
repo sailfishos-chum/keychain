@@ -1,9 +1,9 @@
 Name: keychain
-Summary: Agent manager for OpenSSH, ssh.com, Sun SSH, and GnuPG
+Summary: SSH and GPG agent manager for secure key management
 Version: 2.9.8
 Release: 2
 License: GPLv2
-URL: https://www.funtoo.org/Keychain
+URL: https://github.com/danielrobbins/keychain
 SCM: https://github.com/danielrobbins/keychain
 Sources:
     - '%{name}-%{version}.tar.gz'
@@ -14,16 +14,16 @@ Patches:
     - 'keychain-%{version}-empty-ssh-askpass.patch'
     - 'keychain-%{version}-typos.patch'
 Description: |
-    Keychain is a manager for OpenSSH, ssh.com, Sun SSH and GnuPG agents.
-    It acts as a front-end to the agents, allowing you to easily have one
-    long-running agent process per system, rather than per login session.
-    This reduces the number of times you need to enter your passphrase
-    from once per new login session to once every time your local machine
-    is rebooted.
+    Keychain is a manager for OpenSSH and GnuPG agents. It acts as a front-end
+    to ssh-agent and gpg-agent, allowing you to easily have one long-running
+    agent process per system, rather than per login session. This dramatically
+    reduces the number of times you need to enter your passphrase from once per
+    new login session to once every time your local machine is rebooted.
 
     %if 0%{?_chum}
     Type: console-application
     PackagedBy: nephros
+    DeveloperName:  Daniel Robbins
     Categories:
      - Security
      - ConsoleOnly
@@ -31,10 +31,6 @@ Description: |
     Custom:
       Repo: https://github.com/danielrobbins/keychain
       PackagingRepo: https://github.com/sailfishos-chum/keychain
-    Links:
-      Homepage: https://www.funtoo.org/Keychain
-      Help: https://www.funtoo.org/Keychain
-      Bugtracker: https://github.com/funtoo/keychain/issues
     %endif
 
 SetupOptions: -q -n %{name}-%{version}/upstream
