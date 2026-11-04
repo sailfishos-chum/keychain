@@ -19,8 +19,8 @@ Source1:    https://raw.githubusercontent.com/gentoo/gentoo/master/net-misc/keyc
 Source2:    https://raw.githubusercontent.com/gentoo/gentoo/master/net-misc/keychain/files/keychain-2.8.5-malformed-ssh-key.patch
 Source3:    https://raw.githubusercontent.com/gentoo/gentoo/master/net-misc/keychain/files/keychain-2.8.5-typos.patch
 Source100:  keychain.yaml
-Patch0:     keychain-%{version}-empty-ssh-askpass.patch
-Patch1:     keychain-%{version}-typos.patch
+Patch0:     keychain-2.9.8-empty-ssh-askpass.patch
+Patch1:     keychain-2.9.8-typos.patch
 BuildRequires:  perl
 Provides:   openrepos-keychain = %{version}
 Conflicts:   openrepos-keychain <= %{version}
@@ -52,9 +52,9 @@ Links:
 %prep
 %setup -q -n %{name}-%{version}/upstream
 
-# keychain-%{version}-empty-ssh-askpass.patch
+# keychain-2.9.8-empty-ssh-askpass.patch
 %patch0 -p1
-# keychain-%{version}-typos.patch
+# keychain-2.9.8-typos.patch
 %patch1 -p1
 # >> setup
 # << setup

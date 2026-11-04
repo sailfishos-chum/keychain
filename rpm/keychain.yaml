@@ -11,8 +11,8 @@ Sources:
     - 'https://raw.githubusercontent.com/gentoo/gentoo/master/net-misc/keychain/files/keychain-2.8.5-malformed-ssh-key.patch'
     - 'https://raw.githubusercontent.com/gentoo/gentoo/master/net-misc/keychain/files/keychain-2.8.5-typos.patch'
 Patches:
-    - 'keychain-%{version}-empty-ssh-askpass.patch'
-    - 'keychain-%{version}-typos.patch'
+    - 'keychain-2.9.8-empty-ssh-askpass.patch'
+    - 'keychain-2.9.8-typos.patch'
 Description: |
     Keychain is a manager for OpenSSH and GnuPG agents. It acts as a front-end
     to ssh-agent and gpg-agent, allowing you to easily have one long-running
